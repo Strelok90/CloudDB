@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="globParent" alignment="center" style="-fx-background-image: url(wall.png);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+    <TextField fx:id="login" maxWidth="200" promptText="Login">
+        <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="8.0" />
+        </VBox.margin></TextField>
+    <Label fx:id="errorLabel" visible="false" />
+    <PasswordField fx:id="password" maxWidth="200" promptText="Password">
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </padding>
+        <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+        </VBox.margin></PasswordField>
+    <Button onAction="#auth" prefWidth="200" text="Войти">
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <VBox.margin>
+            <Insets bottom="8.0" left="2.0" right="2.0" top="10.0" />
+        </VBox.margin></Button>
+</VBox>
